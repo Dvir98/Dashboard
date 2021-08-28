@@ -1,4 +1,10 @@
-<div style = "margin-top: -90px;">
-    <p>support works!</p>
+<div style="margin-top: -90px;">
+    
+    <div style="display: flex; flex-wrap: wrap">
+        <div *ngFor=" let obj of listObjects; let i = index">
+            <div style=" height: 100px; width: 150px; background-color: gray; margin-top: 10px;  margin-left: 10px; ">
+                {{obj.name}}
+            </div>
+        </div>
+    </div>
 </div>
-
